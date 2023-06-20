@@ -1,4 +1,5 @@
 :root {
+  --card-color: rgb(23, 23, 23);
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
@@ -161,6 +162,7 @@ header {
   width: 100%;
   display: flex;
   justify-items: end;
+  z-index: 0;
 }
 
 .inner-quote-div {
@@ -237,5 +239,88 @@ header {
   transform: translate(-50% , -50%);
   color: #8A8A8A;
   font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+  .h-md-100vh {
+    height: 100vh;
+  }
+}
+
+.my-video {
+  height: 100%;
+  background-size: cover;
+  object-fit: cover;
+  filter: grayscale(100%);
+}
+
+.w-md-50 {
+  width: 60%;
+}
+
+@media (min-width: 768px) {
+  .line-height-large {
+    line-height: 2rem;
+  }
+}
+
+.book-modal .modal-header {
+  border: none;
+  padding: .5rem 1.5rem .5rem .5rem;
+}
+
+.book-modal .modal-content {
+  /*background-color: #fff;*/
+  /*color: #000;*/
+  border-radius: 2rem;
+  border: solid 2px rgba(255,255,255,0.3);
+}
+
+.another-tab-link {
+  padding: .5rem 1rem;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 2rem;
+  background-color: #414141;
+  font-weight: 300;
+}
+
+.book-modal .modal-body {
+  padding: .1rem .5rem .5rem .5rem;
+}
+
+.book-modal .modal-body iframe, .book-modal .modal-body .bg-light {
+  border-radius: 1.5rem;
+}
+
+.big-hr {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  z-index: -2;
+  height: 1px;
+  background-color: rgba(255,255,255,0.17);
+}
+
+.background-title {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50% , -50%);
+  z-index: -1;
+  color: rgba(255,255,255,0.1);
+  background-color: #080808;
+  font-family: 'Montserrat';
+}
+
+#cards .card-image img {
+  width: 6rem;
+  opacity: .5;
+}
+
+#cards .card-info img {
+  width: 2rem;
+  margin-right: 1rem;
 }
 

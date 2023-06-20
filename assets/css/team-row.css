@@ -1,0 +1,148 @@
+.fotom .border {
+  height: 369px;
+  width: 100%;
+  background: transparent;
+  border-radius: 10px;
+  transition: border 1s;
+  position: relative;
+  border: none!important;
+}
+
+.border:hover {
+  border: 1px solid #fff;
+}
+
+.team-row .card {
+  height: 100%;
+  width: 100%;
+  border-radius: 0;
+  transition: background 0.8s;
+  overflow: hidden;
+  box-shadow: 0 70px 63px -60px #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border: none;
+  margin-bottom: 1rem;
+}
+
+.card0 {
+  background: url("../../assets/img/diako.webp") center center no-repeat;
+  background-size: 300px;
+}
+
+.card1 {
+  background: url("../../assets/img/delina.webp") center center no-repeat;
+  background-size: 300px;
+}
+
+.card2 {
+  background: url("../../assets/img/RussellKuya.webp") center center no-repeat;
+  background-size: 350px;
+}
+
+.card3 {
+  background: url("../../assets/img/daro.webp") center center no-repeat;
+  background-size: 300px;
+}
+
+.card4 {
+  background: url("../../assets/img/joshua.webp") center center no-repeat;
+  background-size: 300px;
+}
+
+.card0:hover {
+  background: url("../../assets/img/diako.webp") center center no-repeat;
+  background-size: 400px;
+}
+
+.card1:hover {
+  background: url("../../assets/img/delina.webp") center center no-repeat;
+  background-size: 450px;
+}
+
+.card2:hover {
+  background: url("../../assets/img/RussellKuya.webp") center center no-repeat;
+  background-size: 450px;
+}
+
+.card3:hover {
+  background: url("../../assets/img/daro.webp") center center no-repeat;
+  background-size: 450px;
+}
+
+.card4:hover {
+  background: url("../../assets/img/joshua.webp") center center no-repeat;
+  background-size: 350px;
+}
+
+.card.fotom:hover h3 {
+  opacity: 1;
+  background-color: rgba(255,255,255,0.3);
+}
+
+.card.fotom:hover .fa, .card.fotom:hover svg, .card.fotom:hover i {
+  opacity: 1;
+}
+
+.fotom h3 {
+  color: #000000;
+  margin: 1rem;
+  opacity: 0;
+  transition: opacity 1s;
+  text-align: center;
+  /*mix-blend-mode: difference;*/
+  font-family: 'Poppins';
+  font-weight: 200;
+  font-size: 1.2rem;
+  padding: .5rem;
+  border-radius: 0;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.fotom svg, .fotom .fa, .fotom i {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.fotom .icons {
+  position: absolute;
+  fill: #fff;
+  color: #fff;
+  height: 130px;
+  top: 226px;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.icons a {
+  color: #ffffff;
+}
+
+*:focus, *:active {
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.team-row > div {
+  /*justify-content: center;*/
+  display: flex;
+  /*flex-direction: column;*/
+  align-items: center;
+  gap: 1rem;
+}
+
+.card.fotom {
+  filter: grayscale(100%);
+}
+
+.card.fotom {
+  outline: 1px solid #ffffff;
+  outline-offset: .4rem;
+}
+
