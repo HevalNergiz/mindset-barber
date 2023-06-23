@@ -3,6 +3,7 @@
   background: #f0f0f0;
   height: 50vh;
   object-fit: cover;
+  filter: grayscale(1);
 }
 
 .demo-gallery ul {
@@ -12,7 +13,7 @@
 
 .demo-gallery li {
   flex-shrink: 0;
-  width: clamp(500px, 60vw, 800px);
+  width: clamp(500px, 50vw, 800px);
   padding-right: 1rem;
 }
 
@@ -32,13 +33,14 @@
 }
 
 .loader {
-  /*position: fixed;*/
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   background: black;
   color: white;
+  z-index: 9;
 }
 
 .demo-wrapper {

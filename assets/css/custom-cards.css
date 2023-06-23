@@ -10,7 +10,7 @@
   opacity: 1;
 }
 
-.card {
+#cards .card {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 0;
   cursor: pointer;
@@ -21,11 +21,11 @@
   width: calc(33.333333% - 6px);
 }
 
-.card:hover::before {
+#cards .card:hover::before {
   opacity: 1;
 }
 
-.card::before, .card::after {
+#cards .card::before, #cards .card::after {
   border-radius: inherit;
   content: "";
   height: 100%;
@@ -37,17 +37,17 @@
   width: 100%;
 }
 
-.card::before {
+#cards .card::before {
   background: radial-gradient( 800px circle at var(--mouse-x) var(--mouse-y), rgba(255, 255, 255, 0.06), transparent 40% );
   z-index: 3;
 }
 
-.card::after {
+#cards .card::after {
   background: radial-gradient( 600px circle at var(--mouse-x) var(--mouse-y), rgba(255, 255, 255, 0.4), transparent 40% );
   z-index: 1;
 }
 
-.card > .card-content {
+#cards .card > .card-content {
   background-color: var(--card-color);
   border-radius: inherit;
   display: flex;
@@ -61,11 +61,11 @@
 
 /* -- ↓ ↓ ↓ extra card content styles ↓ ↓ ↓ -- */
 
-i {
+#cards i {
   color: rgb(240, 240, 240);
 }
 
-.card-image {
+#cards .card-image {
   align-items: center;
   display: flex;
   height: 140px;
@@ -73,12 +73,12 @@ i {
   overflow: hidden;
 }
 
-.card-image > i {
+#cards .card-image > i {
   font-size: 6em;
   opacity: 0.25;
 }
 
-.card-info-wrapper {
+#cards .card-info-wrapper {
   align-items: center;
   display: flex;
   flex-grow: 1;
@@ -114,13 +114,6 @@ i {
 /* -- ↓ ↓ ↓ some responsiveness ↓ ↓ ↓ -- */
 
 @media (max-width: 1000px) {
-  body {
-    align-items: flex-start;
-    overflow: auto;
-  }
-}
-
-@media (max-width: 1000px) {
   #cards {
     max-width: 1000px;
     padding: 10px 0px;
@@ -128,32 +121,32 @@ i {
 }
 
 @media (max-width: 1000px) {
-  .card {
+  #cards .card {
     flex-shrink: 1;
     width: calc(50% - 4px);
   }
 }
 
 @media (max-width: 500px) {
-  .card {
-    height: 180px;
+  #cards .card {
+    height: 17rem;
   }
 }
 
 @media (max-width: 500px) {
-  .card-image {
-    height: 80px;
+  #cards .card-image {
+    height: 10rem;
   }
 }
 
 @media (max-width: 500px) {
-  .card-image > i {
+  #cards .card-image > i {
     font-size: 3em;
   }
 }
 
 @media (max-width: 500px) {
-  .card-info-wrapper {
+  #cards .card-info-wrapper {
     padding: 0px 10px;
   }
 }
@@ -178,7 +171,7 @@ i {
 }
 
 @media (max-width: 320px) {
-  .card {
+  #cards .card {
     width: 100%;
   }
 }
@@ -218,5 +211,255 @@ i {
 
 .team-row a {
   text-decoration: none;
+  cursor: pointer;
+}
+
+button.another-tab-link {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  width: 48px;
+}
+
+@media (min-width: 768px) {
+  .book-services-info-div {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .book-services-info-div {
+    display: flex;
+    gap: 1rem;
+    align-items: start;
+    flex-direction: column;
+  }
+}
+
+.header-content-mother-div {
+  display: grid;
+  height: 100%;
+  align-items: end;
+}
+
+@media (max-width: 768px) {
+  .w-max-md-100 {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .header-section {
+    background-image: url("../../assets/img/mindset-pattern.png");
+  }
+}
+
+@media (max-width: 768px) {
+  .header-section {
+    background-image: url("../../assets/img/mobile-bg.png");
+  }
+}
+
+@media (min-width: 768px) {
+  .display-md-5 {
+    font-size: calc(1.425rem + 2.1vw);
+    font-weight: 300;
+    line-height: 1.2;
+  }
+}
+
+@media (max-width:768px) {
+  .small-max-md {
+    font-size: .875rem;
+  }
+}
+
+.features .card .card-title {
+  font-weight: 300;
+}
+
+.features .card .card-text {
+  color: #808080!important;
+}
+
+.features .card .bs-icon-lg {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  display: grid;
+  /*padding: 1rem;*/
+  width: 3.5rem;
+  height: 3.5rem;
+  align-items: center;
+  background-color: rgba(255,255,255,0.13);
+  color: #ffffff;
+  justify-content: center;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer h3 {
+  font-weight: 300;
+  font-size: 1.2rem;
+  padding-bottom: .5rem;
+  border-bottom: .5px solid #8a8a8a;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  footer .row ul li {
+    padding-left: 1rem;
+    border-left: 1px solid #fff;
+  }
+}
+
+footer .row ul li {
+  font-weight: 300;
+  margin-bottom: .5rem;
+}
+
+footer ul li a.link-light {
+  display: flex;
+  justify-content: start;
+  gap: .5rem;
+  align-items: center;
+  transition-duration: .2s;
+}
+
+footer ul li a.link-light:hover {
+  gap: 1rem;
+}
+
+.pricing-table-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: rgb(23,23,23);
+  border: .5px solid #212121;
+  align-items: center;
+  gap: 2rem;
+}
+
+.pricing-table {
+  display: grid;
+  gap: 1rem;
+}
+
+.pricing-table-row .h5:last-child {
+  font-weight: bold!important;
+  color: rgb(242,242,242);
+  padding: .75rem 1.5rem;
+  background-color: rgba(255,255,255,0.1);
+  border-radius: 5rem;
+}
+
+.pricing-table-row .h5 {
+  color: rgb(242,242,242);
+}
+
+@media (max-width: 768px) {
+  .pricing-table-row {
+    flex-direction: column;
+    align-items: start;
+    padding: 1.5rem 1rem;
+    gap: 2rem;
+  }
+}
+
+.pricing-table-row .h5:first-child {
+}
+
+.services-main {
+  padding-top: 5rem;
+}
+
+.flying {
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  z-index: 3;
+}
+
+.about-us-section {
+  margin-top: 0rem;
+}
+
+.other-page header {
+  padding-top: 3rem;
+}
+
+@media (max-width: 768px) {
+  .h-md-100vh.h-50-vh {
+    height: 50vh;
+  }
+}
+
+.about-us-cover {
+  filter: grayscale(1);
+  background-position: center center;
+}
+
+.col-md-6 #cards .card {
+  flex-shrink: 1;
+  width: calc(50% - 4px);
+}
+
+@media (max-width: 768px) {
+  iframe.contact-map {
+    height: 50vh;
+  }
+}
+
+@media (min-width: 768px) {
+  iframe.contact-map {
+    height: 100vh;
+  }
+}
+
+.reachuslink {
+  text-decoration: none;
+  color: #fff;
+}
+
+.reachusicon {
+  width: 1.5rem;
+}
+
+.reachusicondiv {
+  background-color: rgba(255,255,255,0.1);
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  box-sizing: content-box;
+  display: grid;
+}
+
+@media (min-width: 768px) {
+  .w-md-50.contact {
+    width: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+  footer ul li a.link-light {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .nav__list-item a {
+    font-size: 2.5rem;
+  }
+}
+
+.watch-video {
+  height: 80vh;
+  max-height: 757.461px;
 }
 
