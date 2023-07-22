@@ -28,8 +28,9 @@
 }
 
 .card0 {
-  background: url("../../assets/img/diako.webp") center center no-repeat;
-  background-size: 300px;
+  background: url("../../assets/img/diako2.webp") center center no-repeat;
+  background-size: 270px;
+  background-position: left;
 }
 
 .card1 {
@@ -53,8 +54,9 @@
 }
 
 .card0:hover {
-  background: url("../../assets/img/diako.webp") center center no-repeat;
-  background-size: 400px;
+  background: url("../../assets/img/diako2.webp") center center no-repeat;
+  background-size: 379px;
+  background-position: left;
 }
 
 .card1:hover {
