@@ -1,7 +1,6 @@
 .demo-gallery img {
   width: 100%;
   background: #f0f0f0;
-  height: 50vh;
   object-fit: cover;
   filter: grayscale(1);
 }
@@ -62,5 +61,17 @@
   line-height: 1;
   font-weight: 900;
   white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .demo-gallery img {
+    height: 33.33333vh;
+  }
+}
+
+@media (min-width: 768px) {
+  .demo-gallery img {
+    height: 50vh;
+  }
 }
 
