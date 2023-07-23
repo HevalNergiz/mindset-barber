@@ -356,3 +356,9 @@ header {
   margin-right: 1rem;
 }
 
+@media (max-width: 768px) {
+  .logo {
+    width: 6rem!important;
+  }
+}
+
