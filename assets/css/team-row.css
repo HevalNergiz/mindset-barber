@@ -25,58 +25,24 @@
   position: relative;
   border: none;
   margin-bottom: 1rem;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
-.card0 {
-  background: url("../../assets/img/diako2.webp") center center no-repeat;
+.team-row .col:nth-child(1) .card {
   background-size: 270px;
-  background-position: left;
 }
 
-.card1 {
-  background: url("../../assets/img/delina.webp") center center no-repeat;
+.team-row .col:not(:nth-child(1)) .card {
   background-size: 300px;
 }
 
-.card2 {
-  background: url("../../assets/img/RussellKuya.webp") center center no-repeat;
-  background-size: 350px;
-}
-
-.card3 {
-  background: url("../../assets/img/daro.webp") center center no-repeat;
-  background-size: 300px;
-}
-
-.card4 {
-  background: url("../../assets/img/joshua.webp") center center no-repeat;
-  background-size: 300px;
-}
-
-.card0:hover {
-  background: url("../../assets/img/diako2.webp") center center no-repeat;
+.team-row .col:nth-child(1) .card:hover {
   background-size: 379px;
-  background-position: left;
 }
 
-.card1:hover {
-  background: url("../../assets/img/delina.webp") center center no-repeat;
+.team-row .col:not(:nth-child(1)) .card:hover {
   background-size: 450px;
-}
-
-.card2:hover {
-  background: url("../../assets/img/RussellKuya.webp") center center no-repeat;
-  background-size: 450px;
-}
-
-.card3:hover {
-  background: url("../../assets/img/daro.webp") center center no-repeat;
-  background-size: 450px;
-}
-
-.card4:hover {
-  background: url("../../assets/img/joshua.webp") center center no-repeat;
-  background-size: 350px;
 }
 
 .card.fotom:hover h3 {
